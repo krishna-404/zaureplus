@@ -94,6 +94,7 @@ const form = document.forms['get-email']
   }
 
   //Countdown Timer
+  /*
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -136,3 +137,4 @@ const form = document.forms['get-email']
   
   const deadline = 'August 22 2020 10:00:00 GMT+0530';
   // initializeClock('clockdiv', deadline);
+  */

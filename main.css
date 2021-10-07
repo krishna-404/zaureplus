@@ -248,7 +248,7 @@ form{
 #carousel{
   position: relative;
   width: 100%;
-  background-color: #838383;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
