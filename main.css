@@ -113,7 +113,7 @@ main{
 }
 
 #message{
-  padding: 0 30px;
+  padding: 0 40px;
   text-align: justify;
   text-align-last: center;
   font-size: large;
@@ -132,9 +132,13 @@ form{
 
 }
 
+#sm-para {
+  margin-bottom: 0.5em;
+}
+
 #sm-handles{
   display: flex;
-  margin: 2em auto;
+  margin: 0 auto 2em;
 }
 
 .sm-icon{
@@ -166,6 +170,14 @@ form{
 
 .twitter:hover{
   border: #00acee 1px solid;
+}
+
+.h2-msg{
+  padding: 0 40px;
+  text-align: justify;
+  text-align-last: center;
+  font-size: large;
+  font-weight: normal;
 }
 
 #features{
