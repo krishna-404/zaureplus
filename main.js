@@ -74,25 +74,29 @@ const form = document.forms['get-email']
 
   //carousel
   var slides = document.getElementsByClassName("slider-image-div");
-  var slideIndex = 1;
-  showSlides(slideIndex);
+  var slideIndex = 0;
 
   //next/previous controls
   function plusSlides(n){
-    slides[slideIndex-1].style.display = "none";
+    if (slideIndex>0){
+      slides[slideIndex-1].style.display = "none";
+    }
     showSlides(slideIndex += n);
   }
 
-  function currentslide(n){
-    showSlides(slideIndex = n);
-  }
-
   function showSlides(n) {
-    var i;
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     slides[slideIndex-1].style.display = "block";
+    // console.log({n});
+    setTimeout(timeDelayFunc, 2000);
   }
+
+  function timeDelayFunc() {
+    var consta = setTimeout(plusSlides(1), 2000);
+  }
+
+  timeDelayFunc();
 
   //Countdown Timer
   /*
