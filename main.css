@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif, sans-serif;
-  line-height: 1.6em;
+  /* line-height: 1.6em; */
   word-break: break-word; /* to stop overflow due to long words */
 }
 
@@ -42,8 +42,54 @@ body, #data{
   margin-bottom: 2em;
 }
 
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #main-logo{
   width: 80%;
+  margin-bottom: 2em;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
+  align-items: center;
+  text-align: center;
+}
+
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip3 {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+li {
+  display: block;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: .85;
+  height: 45px;
+  margin-bottom: 45px;   
 }
 
 #name, #namelabel{

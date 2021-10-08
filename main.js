@@ -1,4 +1,5 @@
 // Typewriter text animation
+/*
 const typedTextSpan = document.querySelector(".type-anime")
 const cursorSpan = document.querySelector(".cursor-anime")
 const figIcons = document.getElementById("fig-icons")
@@ -45,7 +46,7 @@ function erase(){
 document.addEventListener("DOMContentLoaded", function(){
     if (textArray.length) setTimeout(type,500);
 })
-
+*/
 //get subscriber email address
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyzuywTVWnElInuXtius19e0cn9mmVIS19Ysb2IH6IQLimMj9k/exec'
 const form = document.forms['get-email']
